@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { AppController } from './app.controller.js';
+import { AppService } from './app.service.js';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { databaseConfig, databaseConfigForFeature } from './database.config';
-import { staticDeploymentModule } from './static-delivery.config';
+import { databaseConfig, databaseConfigForFeature } from './database.config.js';
+import { staticDeploymentModule } from './static-delivery.config.js';
 import { JwtModule } from '@nestjs/jwt';
 
 @Module({
